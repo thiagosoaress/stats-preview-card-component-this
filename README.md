@@ -12,3 +12,4 @@ Visualização desktop
 Visualização mobile
 
 ![](assets/images/project_mobile.PNG)
+![](assets/images/project_mobile2.PNG)
