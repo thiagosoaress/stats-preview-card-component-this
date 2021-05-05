@@ -1,0 +1,158 @@
+body {
+    background-color: #0a0c1b;
+    font-family: 'Inter', sans-serif;
+}
+
+/* generics */
+.spotlight {
+    color: #aa5cdb;
+}
+
+/* Style Card*/ 
+
+.main-stats {
+    width: 100vw;
+    margin-top: 21vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-stats .wrapper-card {
+    width: 80vw;
+    max-width: 1050px;
+    color: #fff;
+    background-color: #1c1938;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    border-radius: 10px;
+}
+
+.wrapper-card .wrapper-content {
+    padding: 70px 45px;
+    max-width: 40vw;
+}
+
+.wrapper-content .title {
+    font-family: 'Inter', sans-serif;
+    font-size: 2rem;
+}
+
+.wrapper-content .description {
+    color:#8c8b9a;
+    margin: 35px 0;
+    font-weight: 600;
+}
+
+
+/* Wrapper KPI */
+.wrapper-content .wrapper-kpis {
+    display: flex;
+}
+
+.wrapper-kpis .kpi {
+    flex-grow: 1;
+}
+
+.wrapper-kpis .kpi .text {
+    color:#8c8b9a;
+    text-transform: uppercase;
+    font-size: 0.625rem;
+    font-weight: 700;
+    margin-top: 3px;
+}
+
+/* Style image */
+.wrapper-card .wrapper-image {
+    max-width: 100%;
+    object-fit: cover;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0 10px 10px 0;
+}
+
+.wrapper-card .wrapper-image .img {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+}
+
+.wrapper-card .wrapper-image .mask {
+    background-color: rgba(127, 86, 153, 0.5);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+}
+
+/* Style footer-stats */
+
+.footer-stats {
+    color:#8c8b9a;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+/* Mobile */
+@media (max-width: 767px) {
+
+    .main-stats {
+        margin-top: 5vh;
+    }
+
+    .main-stats .wrapper-card {
+        display: block;
+        width: 92vw;
+    }
+
+
+    .wrapper-card .wrapper-content {
+        padding: 50px 35px;
+        max-width: 100vw;
+    }
+
+    .wrapper-content .description,
+    .wrapper-content .title {
+        text-align: center;
+    }
+
+    .wrapper-content .wrapper-kpis {
+        display: block;
+        text-align: center;
+    }
+
+    .wrapper-kpis .kpi {
+        margin: 30px 0;
+    }
+
+    .wrapper-kpis .kpi .text {
+        font-size: 0.8rem;
+    }
+
+    .wrapper-kpis .kpi:last-child {
+        margin: 0;
+    }
+
+    .wrapper-kpis .kpi h4 {
+        font-size: 1.5rem;
+    }
+
+    .wrapper-card .wrapper-image {
+        max-width: 100%;
+        object-fit: cover;
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px 10px 0 0;
+    }
+    .wrapper-card .wrapper-image .mask {
+        height: 99%;
+    }
+
+    .footer-stats {
+        font-size: 0.8rem;
+        padding: 27px;
+    }
+}
